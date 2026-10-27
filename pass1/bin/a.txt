@@ -1,31 +1,26 @@
 .data
-    buffer: .word 0
-    result: .word 0
+    counter: .word 5
+    sum:     .word 0
 .text
 START:
-    ; ---------- فرمت R (رجیستر) ----------
-    LDI R1, 10       ; I format
-    LDI R2, 20
-    MOV R3, R1       ; 2 regs
+    LDI R1, counter
+    LD  R2, R1         ; R2 = counter = 5
+    LDI R3, sum
+    LD  R4, R3         ; R4 = sum = 0
+
+SUM_LOOP:
+    MOV ACC, R4
+    ADD R2               ; ACC = sum + counter
+    MOV R4, ACC          ; R4 = new sum
+    ST  R4, R3         ; sum = R4 (update memory)
+
+    LDI R5, 1
     MOV ACC, R2
-    ADD R3           ; 1 reg, ACC implicit
-    SUB R1
-    MUL R2
-    AND R3
-    OR R1
-    NOT              ; 0 reg
-    LD R4, R1     ; 2 regs with brackets
-    ST R4, R2
-    
-    ; ---------- فرمت J (پرش) ----------
-    JMP FINISH
-    JZ LOOP
-    JNZ LOOP
-    CALL SUBROUTINE
-    
-LOOP:
+    SUB R5               ; ACC = counter - 1
+    MOV R2, ACC
+    ST  R2, R1         ; counter--
+
+    MOV ACC, R2
+    JNZ SUM_LOOP
+
     HALT
-FINISH:
-    RET
-SUBROUTINE:
-    RET

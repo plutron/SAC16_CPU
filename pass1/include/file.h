@@ -6,3 +6,4 @@
 
 
 FILE * open_file(char file_name[]);
+Bool make_binary_file(Sac16State * sac,char * inst_name,char * data_name);

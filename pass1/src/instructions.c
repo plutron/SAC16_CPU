@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "data.h"
+#include "symtable.h"
 
 int num_of_reg(Opcode opcode) {
     switch (opcode) {
@@ -88,7 +89,8 @@ Instruction * inst_chek(const char *line,size_t start_point) {
             number_of_inputs ++;
             *(text + counter) = '\0';
             counter = 0;
-            c = line[++i];
+            if(c!='\0')
+                c = line[++i];
             if(number_of_inputs == 1){
                 inst->opcode = opcode_check(text);
                 if(inst->opcode == INVALID_OPCODE){
@@ -107,9 +109,7 @@ Instruction * inst_chek(const char *line,size_t start_point) {
                 if(inst->opcode == JMP || inst->opcode == JZ
                     || inst->opcode == JNZ || inst->opcode == CALL
                 ) {
-                    if(check_format(text)){print_error(InvalidOperand,text);
-                    goto error_handle;}
-                    inst->target = str_to_int(text);
+                    strcpy(inst->target,text);
                 }
                 else {inst->rd = get_register(text);
                 if(inst->rd ==  INVALID_REG){
@@ -120,9 +120,14 @@ Instruction * inst_chek(const char *line,size_t start_point) {
             }
             else if(number_of_inputs == 3){
                 if(inst->opcode == LDI) {
-                    if(check_format(text)){print_error(InvalidOperand,text);
-                    goto error_handle;}
-                    inst->imm8 = str_to_int(text);
+                    if(check_format(text)){
+                        strcpy(inst->target,text);
+                    }
+                    else{
+                    int t = str_to_int(text);
+                    if(t>255){print_error(NotEnughSpace," more then 255.");goto error_handle;}
+                    inst->imm8 =t; 
+                    strcpy(inst->target,"");}
                 }
                 else{
                 inst->rs = get_register(text);

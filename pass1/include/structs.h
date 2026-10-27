@@ -11,8 +11,10 @@ typedef struct
     RegisterName rd;         // destination register
     RegisterName rs;         // source register
     uint8_t  imm8;       // 8-bit immediate
-    uint16_t target;     // jump/branch target address
+    char target[MAX_SIZE_OF_LABEL_NAME];     // jump/branch target address
+    uint16_t address;
 } Instruction;
+
 
 typedef struct {
     Instruction instructions[INSTRUCTION_MEMORY_SIZE];

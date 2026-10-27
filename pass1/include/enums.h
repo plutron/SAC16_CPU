@@ -55,6 +55,8 @@ typedef enum {
     MemoryOverflow,
     TooManyOperand,
     NotEnughReg,
+    NotEnughSpace,
+
     
     // Simulator
     InvalidInstruction,

@@ -7,6 +7,9 @@ void print_error(ErrorType code, char *text) {
     if (code == FileNotFound) {
         printf(RED "FILE NOT FOUND: %s\n" RESET, text);
     }
+    if(code == NotEnughSpace){
+       printf(RED "Not enugh sapce in 8 bit %s\n" RESET, text);     
+    }
     else if( code == InvalidDataLine){
        printf(RED "Invalid data line: %s\n" RESET, text);     
     }

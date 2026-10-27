@@ -78,6 +78,8 @@ word str_to_int(const char *s) {
 int data_chek(char *line, size_t start_point, word *data1)
 {
     size_t i = start_point;
+    Bool flag = FALSE;
+
     size_t counter = 0;
     word data = 0;
     char *text = malloc(sizeof(char) * MAX_SIZE_OF_A_LINE);
@@ -111,7 +113,7 @@ int data_chek(char *line, size_t start_point, word *data1)
             if (strcasecmp(text, ".word") != 0) {
                 print_error(InvalidDataLine, line);
                 goto error_handle;
-            }
+            }flag = TRUE;
         } else {
             if (check_format(text)) {
                 print_error(InvalidDataLine, line);
@@ -141,7 +143,7 @@ int data_chek(char *line, size_t start_point, word *data1)
         number_of_inputs++;
     }
 
-    if (number_of_inputs < 2) {
+    if (number_of_inputs < 2 && flag) {
         print_error(InvalidDataLine, line);
         goto error_handle;
     }

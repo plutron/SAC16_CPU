@@ -116,3 +116,16 @@ int update_symbol_table(Sac16State *sac,  char *label, TypeOfMemory memtype) {
     sac->sytable_counter++;
     return 0;
 }
+
+
+word change_label_to_address(Sac16State *sac, const char *label, TypeOfMemory type) {
+    for (int i = 0; i < sac->sytable_counter; i++) {
+        if (strcasecmp(sac->sytable[i].label, label) == 0) {
+            if (sac->sytable[i].type != type) {
+                return (word)-1; 
+            }
+            return sac->sytable[i].address;  
+        }
+    }
+    return (word)-1;
+}
