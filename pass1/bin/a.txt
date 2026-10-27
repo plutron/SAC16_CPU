@@ -1,0 +1,31 @@
+.data
+    buffer: .word 0
+    result: .word 0
+.text
+START:
+    ; ---------- فرمت R (رجیستر) ----------
+    LDI R1, 10       ; I format
+    LDI R2, 20
+    MOV R3, R1       ; 2 regs
+    MOV ACC, R2
+    ADD R3           ; 1 reg, ACC implicit
+    SUB R1
+    MUL R2
+    AND R3
+    OR R1
+    NOT              ; 0 reg
+    LD R4, R1     ; 2 regs with brackets
+    ST R4, R2
+    
+    ; ---------- فرمت J (پرش) ----------
+    JMP FINISH
+    JZ LOOP
+    JNZ LOOP
+    CALL SUBROUTINE
+    
+LOOP:
+    HALT
+FINISH:
+    RET
+SUBROUTINE:
+    RET
