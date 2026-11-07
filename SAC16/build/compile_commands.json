@@ -1,0 +1,62 @@
+[
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/simulator.c.o -c /home/plutron/Project/CA/SAC16/simulator/simulator.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/simulator.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/simulator.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/alu.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/alu.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/alu.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/alu.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/control_unit.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/control_unit.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/control_unit.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/control_unit.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/cpu.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/cpu.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/cpu.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/cpu.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/datapath.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/datapath.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/datapath.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/datapath.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/decoder.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/decoder.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/decoder.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/decoder.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/disassembler.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/disassembler.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/disassembler.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/disassembler.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/flags.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/flags.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/flags.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/flags.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/memory.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/memory.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/memory.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/memory.c.o"
+},
+{
+  "directory": "/home/plutron/Project/CA/SAC16/build",
+  "command": "/usr/bin/gcc -I/home/plutron/Project/CA/SAC16/simulator/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/similator.dir/src/register_file.c.o -c /home/plutron/Project/CA/SAC16/simulator/src/register_file.c",
+  "file": "/home/plutron/Project/CA/SAC16/simulator/src/register_file.c",
+  "output": "/home/plutron/Project/CA/SAC16/build/CMakeFiles/similator.dir/src/register_file.c.o"
+}
+]
