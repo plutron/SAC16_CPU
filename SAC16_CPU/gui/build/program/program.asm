@@ -1,0 +1,10 @@
+.text
+LDI R0, 11
+LDI R1, 22
+ADD R0
+ADD R1
+LDI R2, 0
+ST ACC, R2
+HALT
+.data
+.word 0
