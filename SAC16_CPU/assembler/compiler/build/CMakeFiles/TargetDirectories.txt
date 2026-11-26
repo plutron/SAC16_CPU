@@ -1,0 +1,3 @@
+/home/plutron/pc/SAC16/SAC16_CPU-main/assembler/compiler/build/CMakeFiles/sac16.dir
+/home/plutron/pc/SAC16/SAC16_CPU-main/assembler/compiler/build/CMakeFiles/edit_cache.dir
+/home/plutron/pc/SAC16/SAC16_CPU-main/assembler/compiler/build/CMakeFiles/rebuild_cache.dir

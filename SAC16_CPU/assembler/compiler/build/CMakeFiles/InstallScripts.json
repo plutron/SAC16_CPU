@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/plutron/pc/SAC16/SAC16_CPU-main/assembler/compiler/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
